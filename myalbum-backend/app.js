@@ -57,6 +57,3 @@ mongoose
   .catch((err) => {
     console.log("db connection failed");
   });
-
-// public: qtogqqrh
-// private: 4db9f523-7e30-4e6a-8b82-540c4a6b2439
