@@ -7,5 +7,6 @@ const ProtectedController = require("../controllers/protected");
 
 // Protected route
 router.get("/protected", verifyToken, ProtectedController.protected);
+router.get("/getGallery", verifyToken, ProtectedController.getGallery);
 
 module.exports = router;

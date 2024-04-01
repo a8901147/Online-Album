@@ -5,7 +5,10 @@ exports.fileStorage = multer.diskStorage({
     cb(null, root + "/images");
   },
   filename: (req, file, cb) => {
-    cb(null, new Date().toISOString() + "-" + file.originalname);
+    //cb(null, req._id + new Date().toISOString() + "-" + file.originalname);
+    const filename = req._id + "-" + file.originalname;
+    cb(null, filename);
+    req.filename = filename;
   },
 });
 
